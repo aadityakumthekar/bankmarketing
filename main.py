@@ -17,8 +17,8 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-def get_function():
-    age = request.form.get('age')
+# def get_function():
+#     age = request.form.get('age')
     
 
 
