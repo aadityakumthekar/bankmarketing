@@ -1,0 +1,22 @@
+Introduction:
+
+
+In this report, we performed an Exploratory Data Analysis (EDA) on the Bank Marketing Dataset. The objective of this analysis was to understand the factors that influence the success of the bank's marketing campaigns. The dataset consists of 45211 observations and 16 variables. The dataset contains both categorical and numerical variables. The analysis revealed that age, job, call duration, education, and contact communication type are some of the factors that influence the success of the bank's marketing campaigns.
+
+Exploratory Data Analysis:
+
+We performed EDA to gain insights and discover patterns. The analysis revealed the following insights:
+
+1.	Age: The age of the customers ranges from 18 to 98 years. The mean age of customers who subscribed to a term deposit is higher than that of customers who did not subscribe. This suggests that older customers are more likely to subscribe to a term deposit.
+
+2.	Job: The most common jobs of the customers are admin, blue-collar, and technician. The customers who subscribed to a term deposit are mostly retired, followed by students and unemployed customers.
+
+3.	Marital Status: Most of the customers are married or single. The customers who subscribed to a term deposit are mostly married, followed by single and divorced customers.
+
+4.	Education: The majority of the customers have completed secondary education. The customers who subscribed to a term deposit are mostly university graduates, followed by customers who have completed high school.
+
+5.	Contact Communication Type: The majority of the customers were contacted by cellular phone.
+
+6.	Call Duration: The call duration ranges from 0 to 4918 seconds with a mean duration of 258 seconds. Customers who subscribed to a term deposit had a higher mean call duration of 537secs compared to customers who did not subscribe with mean of 221 secs. This suggests that longer call duration may be a contributing factor in the success of the bank's marketing campaigns.
+
+
