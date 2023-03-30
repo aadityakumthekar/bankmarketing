@@ -10,79 +10,110 @@
   <form action="{{url_for('predict')}}" method="post">
     <label for="age">Age:</label>
     <input type="number" id="age" name="age" required><br><br>
+    <label for="default"> Default :</label><br>
+  <input type="radio" id="default-yes" name="default" value="1">
+  <label for="default-yes">Yes</label><br>
+  <input type="radio" id="default-no" name="default" value="0">
+  <label for="default-no">No</label><br><br>
+
+  <label for="balance">Balance:</label>
+  <input type="number" id="balance" name="balance" required><br><br>
+
+  <label for="housing">Housing Loan :</label><br>
+  <input type="radio" id="housing-yes" name="housing" value="1">
+  <label for="housing-yes">Yes</label><br>
+  <input type="radio" id="housing-no" name="housing" value="0">
+  <label for="housing-no">No</label><br><br>
+
+
+  <label for="loan">Loan :</label><br>
+  <input type="radio" id="loan-yes" name="loan" value="1">
+  <label for="loan-yes">Yes</label><br>
+  <input type="radio" id="loan-no" name="loan" value="0">
+  <label for="loan-no">No</label><br><br>
+
     
   <label for="call-duration">Call Duration (in sec):</label><br>
   <input type="range" id="call-duration" name="call-duration" min="1" max="1000" value="50">
   <label>1000sec</label>
   <br>
   <br>
-  
-  <label for="balance">Balance:</label>
-  <input type="number" id="balance" name="balance" required><br><br>
-  
-    
-  <label for="housing">Housing Loan :</label><br>
-  <input type="radio" id="housing-yes" name="housing" value="yes">
-  <label for="housing-yes">Yes</label><br>
-  <input type="radio" id="housing-no" name="housing" value="no">
-  <label for="housing-no">No</label><br><br>
+  <label for="campaign"> campaign :</label><br>
+  <input type="radio" id="campaign-yes" name="campaign" value="1">
+  <label for="campaign-yes">Yes</label><br>
+  <input type="radio" id="campaign-no" name="campaign" value="0">
+  <label for="campaign-no">No</label><br><br>
 
-  <label for="default"> Default :</label><br>
-  <input type="radio" id="default-yes" name="default" value="yes">
-  <label for="default-yes">Yes</label><br>
-  <input type="radio" id="default-no" name="default" value="no">
-  <label for="default-no">No</label><br><br>
-
-  <label for="marital-status">Marital Status:</label><br>
-  <input type="radio" id="single" name="marital-status" value="single">
-  <label for="single">Single</label><br>
-  <input type="radio" id="married" name="marital-status" value="married">
-  <label for="married">Married</label><br>
-  <input type="radio" id="divorced" name="marital-status" value="divorced">
-  <label for="divorced">Divorced</label><br>
+  <label for="pdays">pdays</label><br>
+  <input type="radio" id="pdays-yes" name="pdays" value="1">
+  <label for="pdays-yes">Yes</label><br>
+  <input type="radio" id="pdays-no" name="pdays" value="0">
+  <label for="pdays-no">No</label>
   <br>
-  <label for="loan">Loan :</label><br>
-  <input type="radio" id="loan-yes" name="loan" value="yes">
-  <label for="loan-yes">Yes</label><br>
-  <input type="radio" id="loan-no" name="loan" value="no">
-  <label for="loan-no">No</label><br><br>
+  <br>
+  <label for="previous">previous</label><br>
+  <input type="radio" id="previous1" name="previous" value="1">
+  <label for="previous1">Yes</label><br>
+  <input type="radio" id="previous0" name="previous" value="0">
+  <label for="previous0">No</label>
+  <br>
   <br>
   <label for="job">JOB :</label>
 <select name="job" id="job">
-  <option value="unknown">unknown</option>
-  <option value="blue-collar">blue-collar</option>
-  <option value="entrepreneur">entrepreneur</option>
-  <option value="housemaid">housemaid</option>
-  <option value="management">management</option>
-  <option value="retired">retired</option>
-  <option value="self-employed">self-employed</option>
-  <option value="services">services</option>
-  <option value="student">student</option>
-  <option value="technician">technician</option>
-  <option value="unemployed">unemployed</option>
-  <option value="admin">admin</option>
+  <option value="20">unknown</option>
+  <option value="10">blue-collar</option>
+  <option value="11">entrepreneur</option>
+  <option value="12">housemaid</option>
+  <option value="13">management</option>
+  <option value="14">retired</option>
+  <option value="15">self-employed</option>
+  <option value="16">services</option>
+  <option value="17">student</option>
+  <option value="18">technician</option>
+  <option value="19">unemployed</option>
+  <option value="9">admin</option>
 </select>
 <br>
 <br>
-<label for="education">Education :</label>
-<select name="education" id="education">
-  <option value="unknown">unknown</option>
-  <option value="primary">primary</option>
-  <option value="secondary">secondary</option>
-  <option value="tertiary">tertiary</option>
-</select>
-<br>
-<br>
-
-  <label for="poutcome">Poutcome :</label>
-  <input type="text" id="poutcome" name="poutcome" required><br><br>
+  
+  <label for="marital-status">Marital Status:</label><br>
+  <input type="radio" id="single" name="marital-status" value="23">
+  <label for="single">Single</label><br>
+  <input type="radio" id="married" name="marital-status" value="22">
+  <label for="married">Married</label><br>
+  <input type="radio" id="divorced" name="marital-status" value="21">
+  <label for="divorced">Divorced</label><br>
+  <br>
 
   
-  <label for="campaign"> campaign :</label><br>
-  <input type="radio" id="campaign-yes" name="campaign" value="yes">
-  <label for="campaign-yes">Yes</label><br>
-  <input type="radio" id="campaign-no" name="campaign" value="no">
-  <label for="campaign-no">No</label><br><br>
+<label for="education">Education :</label>
+<select name="education" id="education">
+  <option value="27">unknown</option>
+  <option value="24">primary</option>
+  <option value="25">secondary</option>
+  <option value="26">tertiary</option>
+</select>
+<br>
+<br>
+  <label for="contact">contact</label>
+<select name="contact" id="contact">
+  <option value="28">contact_cellular</option>
+  <option value="29">contact_telephone</option>
+  <option value="30">contact_unknown</option>
+  </select>
+<br>
+<br>
+  <label for="poutcome">Poutcome</label>
+<select name="poutcome" id="poutcome">
+  <option value="33">success</option>
+  <option value="31">failure</option>
+  <option value="34">unknown</option>
+  <option value="32">other</option>
+</select>
+  
+
+  <br>
+ 
 
 
   <button name="predict">Predict</button>  
@@ -93,3 +124,4 @@
   
 </body>
 </html>
+
