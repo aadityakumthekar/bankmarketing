@@ -2,6 +2,7 @@ import pickle
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
+from array import array
 from flask import Flask, render_template, request
 app = Flask(__name__)
 model = pickle.load(open('model.pkl','rb'))
@@ -18,8 +19,15 @@ def predict():
         #to_predict_list = list(map(int, to_predict_list)) 
         #print(to_predict_list)    
         to_predict=preprocessing(to_predict_list)
-        prediction = model.predict(to_predict)
+        #prediction = model.predict(to_predict)
+        #X_new = np.array([to_predict, to_predict**2, to_predict**3, to_predict**4, to_predict**5]).T
+        prediction = model.predict(np.expand_dims(to_predict,axis=-1))
         print(prediction)
+
+
+
+
+
     # get list 
     # age = request.form.get('age')
     # call_duration = request.form.get('call-duration')
@@ -51,7 +59,12 @@ def preprocessing(to_predict_list):
         a1[i] = to_predict_list[i]
     for i in to_predict_list[9:-1]:
         a1[int(i)]=1    
-    return a1
+    # Use map() to convert the strings to integers
+    int_list = list(map(int, a1))
+
+    # Use array() to create an array of integers
+    int_array = np.array( int_list)
+    return int_array
 
 
     
